@@ -23,3 +23,21 @@ function testWebP(callback) {
       document.querySelector('body').classList.add('no-webp');
    }
 });
+
+function getForm(num) {
+   let name = document.querySelector(`#name${num}`),
+      tel = document.querySelector(`#tel${num}`),
+      btn = document.querySelectorAll("#btn");
+   
+   for(let i = 0; i < btn.length; i++) {
+      btn[0].addEventListener("click", () => {
+         alert(`Имя: ${name1.value} и Телефон: ${tel1.value}`);
+      })
+
+      btn[1].addEventListener("click", () => {
+         alert(`Имя: ${name2.value} и Телефон: ${tel2.value}`);
+      })
+   }
+}
+
+getForm();
