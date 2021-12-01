@@ -118,6 +118,7 @@ body {
   background-repeat: no-repeat;
   background-position: 50%;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .header__nav {
